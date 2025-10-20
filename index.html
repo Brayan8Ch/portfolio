@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <title>portfolio_bchumpitaz</title>
-    <script type="module" crossorigin src="/assets/index-CpVrjZKT.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DsLLeFhn.css">
+    <script type="module" crossorigin src="/assets/index-DZ21CGT7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dm--Q2TA.css">
   </head>
   <body
     class="dark bg-[#FFFFFF] dark:bg-[#101922] transition-colors duration-500"
@@ -98,8 +101,87 @@
           <hr class="border-[#a7a7a7]" />
         </div>
         <div id="experience-list" class="flex flex-col gap-4"></div>
-
       </div>
+
+      <!-- Technologies -->
+      <div class="mt-4 flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+          <h2 class="text-3xl font-bold text-[#000000] dark:text-[#ffffff]">
+            Tecnologías
+          </h2>
+          <hr class="border-[#a7a7a7]" />
+        </div>
+        <div id="tech-sections" class="w-full"></div>
+      </div>
+      <!-- Espacio extra antes del footer para evitar que quede justo al límite -->
+      <div class="h-4 md:h-4"></div>
+      <!-- Footer / Contacto -->
+      <footer
+        class="w-full border-t border-gray-200 dark:border-[#21303a] mt-8 pt-6 pb-6"
+      >
+        <div class="container mx-auto max-w-3xl font-space">
+          <h3
+            class="text-2xl font-semibold text-[#1e2937] dark:text-[#ffffff] mb-3"
+          >
+            Contacto
+          </h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">
+            ¿Quieres trabajar conmigo o preguntar algo? Envíame un mensaje.
+          </p>
+
+          <form id="contact-form" class="grid grid-cols-1 gap-4" novalidate>
+            <div class="flex flex-col md:flex-row gap-3">
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                placeholder="Nombre"
+                required
+                class="flex-1 p-3 rounded-lg border border-gray-200 dark:border-[#20323a] bg-white dark:bg-[#071019] text-[#111827] dark:text-[#e6eef9] focus:outline-none focus:ring-2 focus:ring-[#5b6eae]"
+              />
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                placeholder="Correo electrónico"
+                required
+                class="w-full md:w-1/2 p-3 rounded-lg border border-gray-200 dark:border-[#20323a] bg-white dark:bg-[#071019] text-[#111827] dark:text-[#e6eef9] focus:outline-none focus:ring-2 focus:ring-[#5b6eae]"
+              />
+            </div>
+
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              placeholder="Mensaje"
+              required
+              class="p-3 rounded-lg border border-gray-200 dark:border-[#20323a] bg-white dark:bg-[#071019] text-[#111827] dark:text-[#e6eef9] focus:outline-none focus:ring-2 focus:ring-[#5b6eae]"
+            ></textarea>
+
+            <div class="flex items-center justify-between">
+              <div
+                id="contact-feedback"
+                class="text-sm text-red-400 hidden"
+                role="status"
+                aria-live="polite"
+              ></div>
+              <button
+                type="submit"
+                class="bg-[#3575ff] hover:bg-[#2e63d1] text-white px-4 py-2 rounded-lg shadow-sm transition-colors duration-200"
+              >
+                Enviar
+              </button>
+            </div>
+            <div id="contact-success" class="hidden text-sm text-green-400">
+              Mensaje enviado (simulado).
+            </div>
+            <p class="text-xs text-gray-500 dark:text-gray-400 mt-2">
+              Este formulario es de ejemplo y solo simula el envío en el
+              cliente.
+            </p>
+          </form>
+        </div>
+      </footer>
     </div>
 
   </body>
