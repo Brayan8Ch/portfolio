@@ -2,22 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/portfolio/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>portfolio_bchumpitaz</title>
-    <script type="module" crossorigin src="/portfolio/assets/index-o7IC-xy4.js"></script>
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-ClfAJluo.css">
+    <script type="module" crossorigin src="/assets/index-CpVrjZKT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DsLLeFhn.css">
   </head>
   <body
-    class="dark bg-[#FFFFFF] dark:bg-[#2f3031] transition-colors duration-500"
+    class="dark bg-[#FFFFFF] dark:bg-[#101922] transition-colors duration-500"
   >
     <div class="container mx-auto max-w-3xl items-center font-space">
       <!-- Header -->
       <div class="flex flex-row justify-end p-4">
         <button
           id="btnLight"
-          class="hidden dark:inline-block text-white bg-[#a3c1f7] p-2 cursor-pointer size-10 rounded-full hover:bg-[#5b6eae] transition-colors duration-300"
+          class="hidden dark:inline-block text-black dark:text-white p-2 cursor-pointer size-10 rounded-full hover:bg-[#5b6eae] transition-colors duration-300"
         >
           <svg
             class="size-6"
@@ -36,7 +36,7 @@
         </button>
         <button
           id="btnDark"
-          class="inline-block dark:hidden text-white bg-[#a3c1f7] p-2 cursor-pointer size-10 rounded-full hover:bg-[#5b6eae] transition-colors duration-300"
+          class="inline-block dark:hidden text-black p-2 cursor-pointer size-10 rounded-full hover:bg-[#5b6eae] hover:text-white transition-colors duration-300"
         >
           <svg
             class="size-6"
@@ -58,8 +58,8 @@
       <div class="p-4 flex justify-between items-center">
         <div class="flex gap-4 items-center">
           <div
-            class="size-48 rounded-full overflow-hidden bg-center bg-no-repeat bg-cover"
-            style="background-image: url('/portfolio/assets/myphoto-ig2vtE_2.png')"
+            class="size-48 rounded-full overflow-hidden bg-center bg-no-repeat bg-cover shadow-[#757575] shadow-md"
+            style="background-image: url('/assets/myphoto-ig2vtE_2.png')"
           ></div>
           <div class="flex flex-col gap-2">
             <h1 class="text-4xl font-bold text-[#1e2937] dark:text-[#ffffff]">
@@ -88,38 +88,17 @@
         </div>
         <div class="flex max-h-fit items-center justify-center gap-4"></div>
       </div>
-      <div class="py-8">
-        <hr class="border-[#a7a7a7]" />
-      </div>
-      <!-- Experience -->
-      <div class="flex flex-col gap-2 p-4">
-        <h2 class="text-3xl font-bold text-[#000000] dark:text-[#ffffff]">
-          Experiencia
-        </h2>
-        <h3 class="text-[#777777] dark:text-[#777777] text-xl">
-          Practicante - Organismo Supervisor de Inversor Privada en
-          Telecomunicaciones (OSIPTEL) <span class="text-sm w-fit">04/2025 - 08/2025</span>
-        </h3>
-        <div class="text-[#1e2937] dark:text-[#d4d4d4]">
-          <ul
-            class="dark:text-[#cccccc] text-[#000000] list-disc list-inside flex flex-col gap-2 text-md"
-          >
-            <li>
-              ETL de datos del Sistema de Información de Reportes de
-              Interrupción SISREP
-            </li>
-            <li>
-              Desarrollo de dashboard con Power BI para la visualización de
-              interrupciones a nivel nacional.
-            </li>
-            <li>
-              Optimización de consultas SQL para mejorar el rendimiento de
-              elaboración de reportes.
-            </li>
-          </ul>
-        </div>
 
-        <h3></h3>
+      <!-- Experience -->
+      <div class="mt-4 flex flex-col gap-4">
+        <div class="flex flex-col gap-1">
+          <h2 class="text-3xl font-bold text-[#000000] dark:text-[#ffffff]">
+            Experiencia
+          </h2>
+          <hr class="border-[#a7a7a7]" />
+        </div>
+        <div id="experience-list" class="flex flex-col gap-4"></div>
+
       </div>
     </div>
 
